@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body>
+    <form>
+        <table border = "1">
+            <tr>
+               <th>Name</th>
+               <th>Salary</th>
+               <th>Months</th>
+               <th>Total</th>
+            </tr>
+            <tr>
+               <td>Ramesh Raman</td>
+               <td>5000</td>
+               <td id="salo1">2 </td>
+               <td><input type="number" placeholder="0" readonly></td>
+            </tr>
+            
+            <tr>
+               <td>Shabbir Hussein</td>
+               <!-- <td>7000</td> -->
+               <!-- <td id="salo2">11</td> -->
+               <td><input id="salo1" type="number" placeholder="0"></td>
+               <td><input id="salo2" type="number" placeholder="0"></td>
+               <td><input id="totale" type="number"  readonly></td>
+            </tr>
+            
+         </table>
+         <input type="button" value="total" name="clickbtn"  onclick="add_number()"/>
+
+         
+         <script type="text/javascript">
+            function add_number(){
+            var first_number = parseInt(document.getElementsById("salo1").value);
+            var second_number = parseInt(document.getElementsById("salo2").value);
+            var result = first_number + second_number;
+            document.getElementById("totale").value = result;    
+            }
+        </script>
+
+
+    </form>
+    
+</body>
+</html>
