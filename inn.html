@@ -40,14 +40,15 @@
             placeholder="0.00"
             min="0"
             id="txt1"
+               value="0"
             onchange="setDecimal(this)"
           />
         </td>
         <td>
-          <input type="number" step="0" placeholder="0" min="0" id="txt2" />
+          <input type="number" step="0"     value="0" placeholder="0" min="0" id="txt2" />
         </td>
         <td>
-          <input type="number" id="txt3" value="0" readonly />
+          <input type="number" id="txt3"    value="0" readonly />
         </td>
       </tr>
       <tr class="rrr">
@@ -68,14 +69,15 @@
             placeholder="0.00"
             min="0"
             id="txt4"
+               value="0"
             onchange="setDecimal(this)"
           />
         </td>
         <td>
-          <input type="number" step="0" placeholder="0" min="0" id="txt5" />
+          <input type="number" step="0"     value="0" placeholder="0" min="0" id="txt5" />
         </td>
         <td>
-          <input type="number" placeholder="0"  id="txt6" readonly />
+          <input type="number" placeholder="0"     value="0"  id="txt6" readonly />
         </td>
       </tr>
       <tr class="rrr">
@@ -96,14 +98,15 @@
             placeholder="0.00"
             min="0"
             id="txt7"
+               value="0"
             onchange="setDecimal(this)"
           />
         </td>
         <td>
-          <input type="number" step="0" placeholder="0" min="0" id="txt8" />
+          <input type="number" step="0" placeholder="0"     value="0" min="0" id="txt8" />
         </td>
         <td>
-          <input type="number" placeholder="0"  id="txt9" readonly />
+          <input type="number" placeholder="0"     value="0"  id="txt9" readonly />
         </td>
       </tr>
       <tr class="rrr">
@@ -122,21 +125,21 @@
           <input
             type="number"
             placeholder="0.00"
+               value="0"
             min="0"
             id="txt10"
             onchange="setDecimal(this)"
           />
         </td>
         <td>
-          <input type="number" step="0" placeholder="0" min="0" id="txt11" />
+          <input type="number" step="0" placeholder="0"     value="0" min="0" id="txt11" />
         </td>
         <td>
           <input
             type="number"
-            value="5"
-            placeholder="0"
-            value="5"
+            placeholder="0"           
             id="txt12"
+               value="0"
             readonly
           />
         </td>
@@ -156,17 +159,18 @@
         <td>
           <input
             type="number"
-            placeholder="0.00"
+            placeholder="0"
+            value="0"
             min="0"
             id="txt13"
             onchange="setDecimal(this)"
           />
         </td>
         <td>
-          <input type="number" step="0" placeholder="0" min="0" id="txt14" />
+          <input type="number" step="0" placeholder="0" min="0"     value="0" id="txt14" />
         </td>
         <td>
-          <input type="number" placeholder="0" id="txt15" value="5"  readonly />
+          <input type="number" placeholder="0" id="txt15"      value="0" readonly />
         </td>
       </tr>
       <tr class="rrr">
@@ -178,7 +182,7 @@
           />
         </th>
         <td>
-          <input type="number" placeholder="0" id="txt16" readonly />
+          <input type="number" placeholder="0"     value="0" id="txt16" readonly />
         </td>
       </tr>
       <tr></tr>
@@ -197,6 +201,9 @@
         var txtnum13 = document.getElementById("txt13").value;
         var txtnum14 = document.getElementById("txt14").value;
         var txtnum16 = document.getElementById("txt16").value;
+        
+
+    
 
 
         var result = parseFloat(txtnum1) * parseFloat(txtnum2);
@@ -220,7 +227,7 @@
         document.getElementById("txt15").value = result4.toFixed(2);
 
         var result5 = result + result1 + result2 + result3 + result4;
-console.log(result5);
+
         document.getElementById("txt16").value = result5.toFixed(2);
       }
       function setDecimal(input) {
